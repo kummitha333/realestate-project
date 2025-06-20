@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transaction Form</title>
+   
+</head>
+<style>
+    body {
+   
+          
+        background-image:url('https://legaltree.org.in/wp-content/uploads/2023/01/realtor-real-estate-real-estate-agent-3261160-1024x778-1.jpg');
+        
+       background-position: center;
+        background-size: cover;
+          position: relative;
+        
+          padding: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+        font-family: Arial, sans-serif;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        max-width: 20%;
+        max-height: 0%;
+       width: 350px;
+        font-size:large; 
+        margin-left:580px ;       
+}
+
+.transaction-form {
+font-weight: bolder;
+
+background: rgba(19, 51, 28, 0);
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+width: 300px;
+font-display: rgb(2, 2, 255);
+
+}
+
+.transaction-form h2 {
+text-align: center;
+margin-bottom:10px;
+font: color;
+font: optional;
+}
+
+.form-group {
+margin-bottom: 10px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+width: 80%;
+padding: 10px;
+border: 2px solid #0f7e92bd;
+border-radius: 43px;
+box-sizing: border-box;
+}
+
+.form-group textarea {
+resize: vertical;
+
+}
+
+button {
+width: 100%;
+padding: 5px;
+border: 2px;
+border-radius: 4px;
+background-color: #28a745;
+color: rgb(255, 255, 255);
+cursor: pointer;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #218838;
+}
+
+</style>
+<body>
+    <div class="transaction-form">
+        <h2>Money Transfer</h2>
+        <form action="http://127.0.0.1:8000/sucs" method="POST" >
+            {% csrf_token %}
+            {% load static %}
+            
+            <div class="form-group">
+                <label for="fromaccount">From Account:</label>
+                <input type="text" id="fromaccount" name="fromaccount" maxlength="10" required oninput="validateFromaccount()">
+            </div>
+            <div class="form-group">
+                <label for="toaccount">To Account:</label>
+                <input type="text" id="toaccount" name="toaccount" maxlength="10" required oninput="validateToaccount()" >
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" max="9999999" >
+            </div>
+            <div class="form-group">
+                <label for="note">Note:</label>
+                <textarea id="note" name="note"></textarea>
+            </div>
+            <button type="submit">Transfer</button>
+        
+    </div>
+
+    <script>
+        function validateFromaccount() {
+            var fromaccount = document.getElementById('fromaccount').value;
+            var isFromaccountValid = fromaccount.length === 10 && /^\d+$/.test(fromaccount);
+
+            document.getElementById('toaccount').disabled = !isFromaccountValid;
+        }
+
+        function validateToaccount() {
+            var toaccount = document.getElementById('toaccount').value;
+            var isToaccountValid = toaccount.length === 10 && /^\d+$/.test(toaccount);
+
+            document.getElementById('amount').disabled = !isToAccountValid;
+        }
+
+        document.getElementById('transferForm').addEventListener('submit', function(event) {
+            var fromaccount = document.getElementById('fromaccount').value;
+            var toaccount = document.getElementById('toaccount').value;
+            var amount = document.getElementById('amount').value;
+
+            if (!fromaccount || fromaccount.length !== 10 || !/^\d+$/.test(fromaccount) ||
+                !toaccount || toaccount.length !== 10 || !/^\d+$/.test(toaccount) || 
+                !amount || amount <= 0) {
+                alert('Please fill in all fields correctly.');
+                event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+</html>
+

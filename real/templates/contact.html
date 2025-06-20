@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Agent Contacts</title>
+  
+</head>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .background-image {
+        background-image: url('https://media.istockphoto.com/id/1285790080/photo/corporate-buildings-in-central-hong-kong.jpg?s=612x612&w=0&k=20&c=5mGDWtr7H1zkdZNsLLOUOA_e6FBlwGpjzFsqx5ZATwU='); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+    
+    .container {
+        background-color: rgba(45, 17, 202, 0.092);
+        padding: 20px;
+        border-radius: 20px;
+        width: 1000%;
+        max-width: 1100px;
+        margin: 40px auto;
+    }
+    
+    h1 {
+        color: #081d04;
+        text-align: center;
+        font-size: xxx-large;
+    }
+    
+    .agents1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    
+    .agent1 {
+        background-color: #a77f6045;
+        padding: 10px;
+        margin: 10px;
+        flood-color: rgb(29, 213, 213);
+        border-radius: 5px;
+        flex-basis: calc(33.333% - 20px); 
+        box-shadow: 0 4px 8px rgba(141, 6, 203, 0.615); 
+        margin-left: 170PX;
+    }
+    
+    .agents {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    
+    .agent {
+        background-color: #a77f605d;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        flex-basis: calc(33.333% - 20px); 
+        box-shadow: 0 4px 8px rgba(141, 6, 203, 0.615); 
+        margin-right: 110PX;
+    }
+    .map-link {
+        display: inline-block;
+        background-color: #7c2ea98e;
+        color: white;
+        padding: 10px 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    .map-link:hover {
+        background-color: #0057b39c;
+    }
+    
+    
+    @media (max-width: 800px) {
+        .agent {
+            flex-basis: calc(50% - 20px); 
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .container {
+            width: 95%;
+        }
+        .agent {
+            flex-basis: 100%; 
+        }
+    }
+    
+</style>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Real Estate Agents</h1>
+            <div class="agents">
+              
+                <div class="agent1">
+                    <h2> NAME:KIRAN</h2>
+                    <p>Address: 18-1 Main St, 60 feet, guntur</p>
+                    <p>Contact: 9966339294</p>
+                    <a href="https://www.google.com/maps/place/123+Main+St" target="_blank" class="map-link">guntur</a>
+                </div>
+
+            
+                <div class="agent">
+                    <h2>NAME:SURYA</h2>
+                    <p>Address: 4-2/6 rushikonda,vizag. </p>
+                    <p>Contact: 8500720583</p>
+                    <a href="https://www.google.com/maps/place/456+Second+St" target="_blank" class="map-link">vizag</a>
+                </div>
+
+            
+                <div class="agent1">
+                    <h2>NAME:ROHAN</h2>
+                    <p>Address: 34/2 ring road,hyd.</p>
+                    <p>Contact: 1234567890</p>
+                    <a href="https://www.google.com/maps/place/789+Third+St" target="_blank" class="map-link">hyd</a>
+                </div>
+                <div class="agent">
+                    <h2> NAME:KARTHIK </h2>
+                    <p>Address: 78/6  ravipadu,prakasam.</p>
+                    <p>Contact: </p>
+                  
+                    <a href="https://www.google.com/maps/place/101+Fourth+St" target="_blank" class="map-link">prakasam</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

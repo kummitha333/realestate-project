@@ -1,0 +1,33 @@
+# Python
+*.pyc
+__pycache__/
+
+# Django
+db.sqlite3
+*.log
+*.pot
+*.py[cod]
+*.so
+*.db
+*.swp
+
+# Environment
+.env
+.env.*
+
+# Virtualenv
+venv/
+ENV/
+env/
+
+# Static files
+/static/
+media/
+
+# VSCode or JetBrains
+.vscode/
+.idea/
+
+# System
+.DS_Store
+Thumbs.db

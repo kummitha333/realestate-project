@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    
+</head>
+<style>
+    .a img{
+    
+        height: 10px;
+        width: 60px;
+        display: flex;
+       border-radius: 55px;
+      
+         }
+         .nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 50px;
+      
+      }
+      .nav-links1{
+      flex: 1;
+      text-align: right;
+      margin-right: 82px;
+      font-size: xx-large;
+      }
+      
+      .nav-links1 ul li{
+      
+      list-style: none;
+      display:inline-block;
+      padding :8px 12px;
+      position: relative;
+      color: rgb(28, 159, 179);
+      
+      
+      }
+      
+      .a img{
+      height: 60px;
+      width: 60px;
+      display: flex;
+      border-radius: 45px;
+      }
+      .nav-links1 ul li a{
+      color:rgb(20, 4, 14);
+      text-decoration: none; 
+      font-size: 20px;
+      font-weight: 50%;
+      flex-direction: row;
+      font-size: x-large;
+      
+      } 
+      .nav-links1 ul li::after{
+      content:'';
+      width: 0%;
+      height: 2px;
+      background:rgb(19, 162, 234);
+      display:block;
+      margin:auto;
+      transition: 0.3s;
+      }
+      .nav-links1 ul li:hover::after{
+      width: 100%;
+      }
+      
+          header {
+              height: 700px;
+             width: 1500px;
+              background-image:url('https://i.pinimg.com/736x/32/59/75/3259751eb4e94902b24f302c29da7ddb.jpg');
+              max-width: 95%;
+              max-height: auto;
+             background-position: center;
+              background-size: cover;
+                position: relative;
+                padding: 30px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;  
+              margin-right: 550px;      
+          }
+      
+           
+          header h2 {
+              margin: 1;
+              margin-right: auto;
+              
+          }
+      
+          header .options {
+              display: flex;
+              margin-bottom: 10px;
+              font-size: 70px;
+                  font-weight: 50%;
+                flex-direction: row;
+                  position: relative;
+          }
+      
+          
+          header .options button::after {
+              content:'';
+               width: 0%;
+                height: 2px;
+               background:rgb(36, 1, 164);
+                  display:block;
+                 margin:auto;
+               transition: 0.3s;
+      
+          }
+          .options button:hover::after{
+            width: 100%;
+           }
+      
+      
+          header .dropdown {
+              position: relative;
+              display: inline-block;
+              background-color: rgb(24, 24, 207);
+               box-shadow: #0ab78800;
+               margin-left: 50px;
+          }
+      
+          header .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #c990d53e;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgb(46, 13, 211);
+              z-index: 1;
+          }
+      
+          header .dropdown:hover .dropdown-content {
+              display: block;
+          }
+          
+          .search-bar {
+              width: 50%;
+              margin-top: 10px;
+              padding: 90px;
+              background-color: #2155c700;
+              border-radius: 5px;
+          }
+      
+          .search-bar input {
+              width: calc(100% - 20px);
+              padding: 5px;
+              border: 1px solid #1b0b0b;
+              border-radius: 30px;
+              margin-right:30px;
+          }
+      
+          .search-bar button {
+              font-size: 15px;
+              background-color: #1e187c00;
+              color: #110b0b;
+              border: none;
+              padding: 5px ;
+              border-radius: 50px;
+              cursor: pointer;
+              margin-left: 650px;
+          }
+          nav{
+      display: flex;
+      padding: 1% 6%;
+      justify-content: space-between;
+      align-items: center;
+      margin-right: 100px;
+      
+      }
+      .nav-links{
+      flex: 1;
+      text-align: right;
+      
+      }
+      
+      .nav-links ul li{
+      
+      list-style: none;
+      display:inline-block;
+      padding :8px 12px;
+      position: relative;
+      color: rgb(28, 159, 179);
+      
+      }
+      .a img{
+      height: 60px;
+      width: 60px;
+      display: flex;
+      border-radius: 50px;
+      
+      }
+      .nav-links ul li a{
+      color:rgb(1, 1, 1);
+      text-decoration: none; 
+      font-size: 25px;
+      font-weight: 50%;
+      flex-direction: row;
+      margin-left: 10px;
+      
+      } 
+      .nav-links ul li::after{
+      content:'';
+      width: 0%;
+      height: 2px;
+      background:rgb(19, 162, 234);
+      display:block;
+      margin:auto;
+      transition: 0.3s;
+      }
+      .nav-links ul li:hover::after{
+      width: 90%;
+      }
+      
+          section {
+          
+              display: flex;
+              justify-content: space-between;
+              padding: 0%;
+              margin-bottom: 0%;
+              top: 60%;
+          }
+      
+          .property {
+             
+              flex:1%;
+              border: px solid #100202;
+              margin-bottom: 10px;
+              background-color: #1293c600;
+              border-radius: 15px;
+              margin-left: 330PX;
+              margin-right: 15px;
+              display: inline;
+          }
+      
+          .property img {
+              max-width: 70%;
+              height: auto;
+              border-top-left-radius: 5px;
+              border-top-right-radius: 5px;
+              padding: 0cap;
+          
+          }
+      
+          .property-info {
+              padding: 0px;
+              margin-left: 0px;
+          }
+          section {
+          
+          display: flex;
+          justify-content: space-between;
+          margin-left: 200px;
+      }
+      
+          .property2 {
+              display: inline;
+             flex:1%;
+             border: px solid #100202;
+             margin-bottom: 10px;
+             background-color: #1293c600;
+             border-radius: 15px;
+            
+             margin-right: 250px;
+         }
+      
+         .property2 img {
+             max-width: 170%;
+             height: 25%;
+             border-top-left-radius: 5px;
+             border-top-right-radius: 5px;
+             margin-top:-40px;
+             margin-right:600px
+             margin-left:100px;
+         
+         }
+      
+         .property2-info {
+             padding: 0px;
+             margin-left:10px;
+      
+        }
+        .ku {
+          margin-top: 60px;
+      }
+      .an img{
+          
+          padding: 30px ;
+          margin-top: 30px;
+          
+      }
+      .ks{
+          margin-top: 30px;
+      }
+      .ka img{
+          margin-top: 40px;
+      }
+      .kum{
+          fontstyle:bold;
+      }
+      .H{
+          
+          margin-right: 30px;
+          text-align: right ;
+      }
+</style>
+<body >
+
+    <header>
+        <div class="a">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/341616964/UE/VP/ZI/194849009/download-11-500x500.jpg">
+        </div>
+        <h2>   MANAGEMENT SYSTEM</h2>
+        <div class="nav-links1">
+               
+            
+            <ul>
+            
+              <li> <a href="http://127.0.0.1:8000/loan/">Get Loan</a></li>
+
+              <li> <a href="http://127.0.0.1:8000/add_property/">Add property</a></li>
+              <div class="dropdown">
+                <button onclick="toggleDropdown()">More Options</button>
+                <div class="dropdown-content">
+                   
+                   <li> <a href="http://127.0.0.1:8000/transaction/" onclick="option2()">TRANSACTION</a></li>
+                    <li><a href="http://127.0.0.1:8000/documental/" onclick="option3()">DOCUMENTS</a></li>
+                </div>
+            </ul>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search properties..." >
+         
+       
+       
+        <div class="nav-links">
+       
+        <ul>
+        <LI><a href="http://127.0.0.1:8000/residential/" onclick="k">Residential</a></li>
+       <li> <a href="http://127.0.0.1:8000/com/" onclick="option3()">commercial</a></li>
+        
+       <li> <a href="" onclick="option3()">Search</a></li>
+        </ul>
+        </div>
+    </div>
+    
+    <section>
+        <div class="property">
+          <div class="property2">
+            <img src="https://img.onmanorama.com/content/dam/mm/en/lifestyle/decor/images/2023/5/22/small-house.jpg.transform/576x300/image.jpg" alt="Property 1">
+            <div class="property-info">
+                <h2>Beautiful Home</h2>
+                <p>3 bedrooms | 2 bathrooms | 1500 sqft</p>
+                <p>$300,000</p>
+                <a href="http://127.0.0.1:8000/contact/"> <button onclick="showContactForm('')">Contact Agent</button> </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="property2">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max200/380101774.jpg?k=b62723e134f10177b5e4f188ef07193e244dff2624bfb9f1c817e8d18f63f05c&o=&hp=1" alt="Property 2">
+            <div class="property-info">
+                <h2>Luxury Apartment</h2>
+                <p>2 bedrooms | 2 bathrooms | 1200 sqft</p>
+                <p>$250,000</p>
+               <a href="http://127.0.0.1:8000/contact/"> <button onclick="showContactForm('Luxury Apartment')">Contact Agent</button></a>
+            </div>
+        </div>
+
+        
+     
+    </section>
+</header>
+    
+    
+<div class="ku"><center>
+    <h1 
+     color="black"
+    >OWNING A HOME IS A KEYSTONE OF WEALTH </h1></center>
+</div>
+<div class="an">
+    <img src="https://media.licdn.com/dms/image/D4D12AQEQ0SdeT1De0w/article-cover_image-shrink_720_1280/0/1674467468452?e=2147483647&v=beta&t=AWTfIxftEyJ0tXiAWxLoQTeapoyKZlnvvB8r5YRRApM" alt="" height="160">
+    <img src="https://educationmags.com/wp-content/uploads/2024/01/10-Companies-That-Hire-for-Remote-Real-Estate-Jobs-1024x512-1-1000x512.jpg" alt="" height="160">
+    <img src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-1020896,resizemode-75,msid-87973704/industry/services/property-/-cstruction/mumbais-stuck-housing-redevelopment-projects-to-get-a-push.jpg" alt="" height="160">
+    <img src="https://static.vecteezy.com/system/resources/previews/017/508/529/large_2x/construction-real-estate-contractor-concept-residential-house-building-drawings-free-photo.jpg" alt="" height="170">
+    
+
+
+</div>
+<div class="ks">
+<center>
+<h1>ABOUT</h1>
+</center>    
+</div>
+<div class="ka">
+    <center><img src="https://advocatechenoyceil.com/wp-content/uploads/2021/06/West-Bengal-Building-Rules-26.png"  width="500",height="700">
+    </center>
+</div>
+<div class="kum">
+    <pre>
+ <p>
+                           Real estate is property consisting of land and the buildings on it, along with its natural resources such as growing crops, minerals or water, 
+      and wild animals; immovable property of this nature.an interest vested in this an item of real property,buildings or housing in generalReal estate is different from personal property, 
+      which is not permanently attached to the land (or comes with the land), such as vehicles, boats, jewelry, furniture, tools, and the rolling stock of a farm and farm animals.
+
+                                                     Residential real estate may contain either a single family or multifamily structure that is available for occupation or for non-business purposes.
+        Residences can be classified by and how they are connected to neighbouring residences and land.
+        Different types of housing tenure can be used for the same physical type. For example, connected residences might be owned by a single entity and leased out, 
+        or owned separately with an agreement covering the relationship between units  and common areas and concerns.
+</p>
+    </pre>
+    </div>
+    <DIV class="H"> 
+<H3>CONTACT LIST</H3>
+  <H5> SRI RAM-9966339294
+    </H5>
+    <h5>karthik-1234567891</h5>
+    <h5>prasadrao-6304171088</h5>
+    <h5>srinivas-8500720583</h5>
+    </DIV>
+</body>
+</html>
+</body>
+
+</html>

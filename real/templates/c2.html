@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Real Estate Management</title>
+    <style>
+        .anj{
+            margin-left: 1150px;
+            font-family: Arial, sans-serif;
+            color: rgb(218, 208, 226);
+            font-size: large;
+            display: flex;
+            flex-direction: row;
+          }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .property {
+            flex: 0 0 calc(33.333% - 20px);
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        
+        .property-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .rooms-section, .reviews-section {
+            flex: 1;
+            margin: 10px;
+        }
+        
+        .floors {
+            margin-top: 10px;
+        }
+        
+        .floor {
+            background: #e7e7e7;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .rooms {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .rooms li {
+            background: #fff;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .room-image, .building-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .review-text {
+            font-style: italic;
+            color: #333;
+        }
+        
+        .star-rating {
+            color: rgb(3, 83, 254);
+            font-size: 1em;
+        }
+        
+        .reviewer {
+            font-weight: bold;
+            color: #666;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .property {
+                flex: 0 0 100%;
+            }
+        
+            .property-content {
+                flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Commercial Real Estate Management</h1>
+    </header>
+  
+    <section class="property-list">
+        <h2>Available Properties</h2>
+        <div class="anj">
+            <a href="http://127.0.0.1:8000/register/" target="_blank"> PROPERTY REGISTRATION</a>
+         </div>
+        <div class="property">
+            <h3>ASPIRE</h3>
+            <a href="" target="_blank">
+            <img src="https://miro.medium.com/v2/resize:fit:1024/1*wljKf50R8OQKlYuOfVGHVQ.jpeg" alt="Room 101" class="room-image">
+            </a>
+            <p>Location: <a href="https://www.google.com/maps/place/Property+1+Location" target="_blank">City Center</a></p>
+            <p>Floors: 16</p>
+            <div class="floors">
+                
+                <div class="floor">
+                    <h4>floors</h4>
+                    <ul class="rooms">
+                       
+                        <li>Room 201
+                        <img src="https://en.idei.club/uploads/posts/2023-06/thumbs/1686375806_en-idei-club-p-construction-office-dizain-pinterest-53.jpg" alt="Room 101" class="room-image">
+
+                        </li>
+                        <li>Room 202
+                            <img src="https://www.erpsuccesspartners.com/wp-content/uploads/2022/05/Ensuring-growth-in-the-Contract-Furniture-Industry.png" alt="Building" class="building-image">
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+                <div class="reviews-section">
+                    <h3>Reviews</h3>
+                    <div class="review">
+                        <p class="review-text">"Great location and lovely house. Perfect for our family vacation!"</p>
+                        <div class="star-rating">
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                            <span class="star">&#9733;</span>
+                        </div>
+                        <p class="reviewer">- G. Ramesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Management</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Real Estate Property Form</title>
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-beautiful-dinner-background-advertising-psd-material-picture-image_1132119.jpg');
+
+    background-image: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.form-container {
+    background-color: rgba(66, 106, 129, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+    width: 500px;
+}
+
+
+.form-container h2 {
+    color: #333;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.form-container input[type="file"] {
+    margin-top: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="form-container">
+        <h2>ADD-Property Form</h2>
+        <form action="http://127.0.0.1:8000/sucs" method="POST" >
+            {% csrf_token %}
+            {% load static %}
+        
+            <label for="propertyType">Property Type:</label>
+            <select id="propertyType" name="propertyType" onchange="enableLocation()">
+
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="condo">Condo</option>
+                <option value="land">Land</option>
+                
+            </select>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required oninput="enableAndRequireFields()">
+           
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price"  disabled> 
+
+            <label for="area">Area_sq.ft:</label>
+            <input type="number" id="area" name="area" disabled>
+
+
+            
+            <div class="form-group">
+                <label for="sellerSignature">dwellingplace:</label>
+                <input type="file" id="sellerSignature" name="sellerSignature" accept="image/*">
+            </div>
+            
+            
+
+            <input type="submit" value="Submit Property">
+        </form>
+    </div>
+<script>
+        function enableAndRequireFields() {
+            var location = document.getElementById('location').value;
+            if(location.trim() !== "") {
+                document.getElementById('price').disabled = false;
+                document.getElementById('price').required = true;
+
+                document.getElementById('area').disabled = false;
+                document.getElementById('area').required = true;
+
+                // Enable and set other fields as required as needed
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

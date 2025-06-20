@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Real Estate Management</title>
+ 
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .property-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .property {
+        flex: 0 0 calc(33.333% - 20px); 
+        background: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+    
+    @media (max-width: 708px) {
+        .property {
+            flex: 0 0 100%;
+        }
+    }
+    
+    
+    .floors {
+        margin-top: 10px;
+    }
+    
+    .floor {
+        background: #e7e7e7;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    
+    .rooms {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .rooms li {
+        background: #fff;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .room-image, .building-image {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        margin-top: 20px;
+    }
+    
+    @media (max-width: 768px) {
+        .property {
+            flex: 0 0 100%;
+        }
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Commercial Real Estate Management</h1>
+    </header>
+
+    <section class="property-list">
+        <h2>Available Properties</h2>
+        <div class="property">
+       
+            <h3>INSPIRE</h3>
+            <a href="http://127.0.0.1:8000/c1/" target="_blank">
+            <img src="https://www.erpsuccesspartners.com/wp-content/uploads/2022/05/Ensuring-growth-in-the-Contract-Furniture-Industry.png" alt="Room 101" class="room-image">
+            </a>
+            <p>Location: <a href="https://www.google.com/maps/place/Property+1+Location" target="_blank">vizag</a></p>
+            <p>Floors: 10</p>
+            <div class="floors">
+                
+                <div class="floor">
+                    <h4>Floors</h4>
+                    <ul class="rooms">
+                       
+                        <li>Room 101
+                        <img src="https://www.flooringconceptsinc.com/wp-content/uploads/2022/12/flooring2.webp" alt="Room 101" class="room-image">
+
+                        </li>
+                        <li>Room 102
+                            <img src="https://media.licdn.com/dms/image/D5622AQFc8BhfJK_R2A/feedshare-shrink_2048_1536/0/1695814908114?e=2147483647&v=beta&t=mlmksknnVhjO-adpB-r9nipxd1WWqlxbl0m6QyKgp5s" alt="Building" class="building-image">
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="property">
+            <h3>ASPIRE</h3>
+            <a href="http://127.0.0.1:8000/c2/" target="_blank">
+            <img src="https://miro.medium.com/v2/resize:fit:1024/1*wljKf50R8OQKlYuOfVGHVQ.jpeg" alt="Room 101" class="room-image">
+            </a>
+            <p>Location: <a href="https://www.google.com/maps/place/Property+1+Location" target="_blank">City Center</a></p>
+            <p>Floors: 16</p>
+            <div class="floors">
+                
+                <div class="floor">
+                    <h4>floors</h4>
+                    <ul class="rooms">
+                       
+                        <li>Room 201
+                        <img src="https://en.idei.club/uploads/posts/2023-06/thumbs/1686375806_en-idei-club-p-construction-office-dizain-pinterest-53.jpg" alt="Room 101" class="room-image">
+
+                        </li>
+                        <li>Room 202
+                            <img src="https://www.erpsuccesspartners.com/wp-content/uploads/2022/05/Ensuring-growth-in-the-Contract-Furniture-Industry.png" alt="Building" class="building-image">
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Real Estate Management</p>
+    </footer>
+</body>
+</html>

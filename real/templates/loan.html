@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Loan Assistance</title>
+    
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: darkblue;
+        background:fixed ;
+      
+       
+    }
+    
+    header {
+        background: #ffffff;
+        color: #161414;
+        padding: 1rem 0;
+        
+        margin-right: 380px;
+    }
+    
+    .loan-info, .banks {
+        padding: 2rem;
+        text-align: center;
+        margin-top: -60px;
+        
+    }
+    
+    
+    
+    .banks {
+        display: flex; /* This line will lay out the child elements side by side */
+        justify-content: center; /* This centers the child elements horizontally */
+        flex-wrap: wrap; /* This allows elements to wrap to the next line if there's not enough space */
+        padding: 2rem;
+        text-align: center;
+        margin: -30px;
+    
+    }
+    
+    .bank {
+        position: relative;
+        margin: 1rem;
+        text-align: center;
+        flex-basis: 20%; /* Adjust this percentage to control the width of each bank div */
+    }
+    
+    
+    .bank {
+        position: relative;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .loan-details {
+        display: none;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 200px;  /* Adjust as needed */
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .bank:hover .loan-details {
+        display: block;
+    }
+    
+    .bank img {
+        width: 90px; /* Adjust as needed */
+        height: auto;
+        border-radius: 70px;
+
+    }
+    
+    
+    button {
+        background-color: #008CBA;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    
+    footer {
+        background: #fffcfc;
+        color: #0b0404;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 190px;
+    }
+     
+</style>
+<body>
+    <header>
+        <h1>Real Estate Loan Assistance</h1>
+    </header>
+    <section class="loan-info">
+        <h2>Get the Best Loan for Your Dream Home</h2>
+        <p>Find the right financing for your real estate purchase with our bank loan assistance program.</p>
+        
+    </section>
+    <section class="banks">
+        <div class="bank">
+            <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/04/sbihomeloan-1617877050.jpg" alt="Bank 1 Logo">
+            <p>Bank 1</p>
+            <div class="loan-details">
+                <p><strong>Loan Offer:</strong> Low-interest rates starting from 3.5% annually.</p>
+                <p><strong>Terms:</strong> Up to 30 years fixed-rate mortgage.</p>
+                <!-- Add more details as needed -->
+            </div>
+        </div>
+        <div class="bank">
+            <img src="https://gumlet.assettype.com/Prabhatkhabar/2023-06/8907969e-3502-4f66-bf9f-150d2d54ed4f/HDFC_HDFC_Bank_Merger_Reason__1_.jpg" alt="Bank 2 Logo">
+            <p>Bank 2</p>
+            <div class="loan-details">
+                <p><strong>Loan Offer:</strong> Special rates for first-time buyers.</p>
+                <p><strong>Terms:</strong> Flexible repayment options.</p>
+                <!-- Add more details as needed -->
+            </div>
+        </div>
+        <!-- ... other banks ... -->
+        
+        
+    </section>
+    <footer>
+        <p>© 2024 Real Estate Services, Inc.</p>
+    </footer>
+</body>
+</html>
