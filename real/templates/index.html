@@ -319,16 +319,15 @@
                
             
             <ul>
-            
-              <li> <a href="http://127.0.0.1:8000/loan/">Get Loan</a></li>
+            <li><a href="{% url 'loan' %}">Get Loan</a></li>
 
-              <li> <a href="http://127.0.0.1:8000/add_property/">Add property</a></li>
+              <li><a href="{% url 'add_property' %}">Add property</a></li>
               <div class="dropdown">
                 <button onclick="toggleDropdown()">More Options</button>
                 <div class="dropdown-content">
                    
-                   <li> <a href="http://127.0.0.1:8000/transaction/" onclick="option2()">TRANSACTION</a></li>
-                    <li><a href="http://127.0.0.1:8000/documental/" onclick="option3()">DOCUMENTS</a></li>
+                  <li><a href="{% url 'transaction' %}">TRANSACTION</a></li>
+<li><a href="{% url 'documental' %}">DOCUMENTS</a></li>
                 </div>
             </ul>
             </div>
@@ -341,8 +340,8 @@
         <div class="nav-links">
        
         <ul>
-        <LI><a href="http://127.0.0.1:8000/residential/" onclick="k">Residential</a></li>
-       <li> <a href="http://127.0.0.1:8000/com/" onclick="option3()">commercial</a></li>
+       <li><a href="{% url 'residential' %}">Residential</a></li>
+<li><a href="{% url 'commercial' %}">Commercial</a></li>
         
        <li> <a href="" onclick="option3()">Search</a></li>
         </ul>
@@ -368,7 +367,10 @@
                 <h2>Luxury Apartment</h2>
                 <p>2 bedrooms | 2 bathrooms | 1200 sqft</p>
                 <p>$250,000</p>
-               <a href="http://127.0.0.1:8000/contact/"> <button onclick="showContactForm('Luxury Apartment')">Contact Agent</button></a>
+               <a href="{% url 'contact' %}">
+  <button type="button" onclick="showContactForm('Luxury Apartment')">Contact Agent</button>
+</a>
+
             </div>
         </div>
 
